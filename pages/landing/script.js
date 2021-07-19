@@ -35,7 +35,6 @@ mapMarkers.forEach(marker => {
     });
 });
 
-
 sliderControllers.forEach(controller => {
     controller.addEventListener('input', () => {
         const currentSlide = controller.parentElement.querySelector('.slider__item_selected');
@@ -47,7 +46,6 @@ sliderControllers.forEach(controller => {
         updateSliderValue(controller, newSlideValue);
     });
 });
-
 
 function changeSlide(oldSlide, newSlide) {
     oldSlide.classList.toggle('slider__item_selected');
